@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Giải phương trình bậc 1-->
+<form>
+  a=<input type="text" value="" id="a"><br>
+  b=<input type="text" value="" id="b"><br>
+    <button type="button" id="click">kết quả trả về</button>
+    <div>
+        <p>Kết quả<span class="result"></span></p>
+    </div>
+</form>
+</body>
+<script>
+        const buttonnhap = document.querySelector('#click');
+        const clickButton = function (){
+            const input1 = document.querySelector('input#a');
+            const input2 = document.querySelector('input#b');
+            if (a==0){
+                 if (b==0){
+                    result = document.querySelector('span.result');
+                    result.innerHTML = "vô số nghiệm";
+                    console.log('click');
+                } else {
+                    result = document.querySelector('span.result');
+                    result.innerHTML = "vô nghiệm";
+                    console.log('click');
+                }
+            } else {
+                result = document.querySelector('span.result');
+                result.innerHTML = "Phương trình có nghiệm"+(parseInt(-(input2).value)/parseInt(input1.value));
+                console.log('click');
+            }
+        }
+        buttonnhap.onclick = clickButton;
+</script>
+</html>
