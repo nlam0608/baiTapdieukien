@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <button type="button" id="play" onclick="buttun()">Bigin</button>
+</form>
+</body>
+<script>
+    // function buttun(){
+        let nhap = parseInt(prompt("Nhập gia trị đâu: "));
+        let nhap2 = parseInt(prompt("Nhập giá trị cuối: "));
+        let sosanh = parseInt(prompt("Nhập để kiểm tra kết quả:"));
+        for (let i = nhap;i >= nhap2; i++){
+            if (sosanh >= nhap && sosanh <=nhap2){
+                sosanh = i;
+                console.log(sosanh+"đung")
+            }else {
+                sosanh = i;
+                alert("bạn đã đoán sai ")
+            }
+        }
+    // }
+</script>
+</html>
